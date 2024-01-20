@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJWrapp Galerie</title>
+    <style>
+         /* Grundlegende Stilisierung */
+         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        header { background: #f1f1f1; padding: 20px 0; }
+        header img { max-width: 100%; height: auto; }
+        nav { background: #333; color: white; }
+        nav ul { padding: 0; list-style: none; text-align: center; }
+        nav ul li { display: inline; }
+        nav a { color: white; padding: 15px; display: inline-block; text-decoration: none; }
+        nav a:hover { background: #555; }
+        .image-wrapper { margin: 20px 0; }
+        .image-wrapper img { width: 100%; height: auto; }
+        footer { background: #f1f1f1; text-align: center; padding: 20px 0; }
+        @media (max-width: 600px) {
+            nav ul li { display: block; text-align: left; }
+            .menu-toggle { display: block; cursor: pointer; padding: 10px; }
+            nav ul { display: none; }
+            nav.active ul { display: block; }
+        }
+
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        .gallery .image-grid {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+        .gallery .image-grid img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery .image-grid img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .gallery .image-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <span class="menu-toggle">Menü</span>
+            <ul>
+                <li><a href="bjwrapp_website.html">Startseite</a></li>
+                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="überuns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container gallery">
+        <h2>Galerie</h2>
+        <div class="image-grid">
+            <img src="bild1.jpg" alt="Bild 1">
+            <img src="bild2.jpg" alt="Bild 2">
+            <img src="bild3.jpg" alt="Bild 3">
+            <img src="bild4.jpg" alt="Bild 4">
+        </div>
+    </div>
+</body>
+</html>

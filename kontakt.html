@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJWrapp - Fahrzeug- und Werbefolierungen</title>
+    <style>
+        /* Grundlegende Stilisierung */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        header { background: #f1f1f1; padding: 20px 0; }
+        header img { max-width: 100%; height: auto; }
+        nav { background: #333; color: white; }
+        nav ul { padding: 0; list-style: none; text-align: center; }
+        nav ul li { display: inline; }
+        nav a { color: white; padding: 15px; display: inline-block; text-decoration: none; }
+        nav a:hover { background: #555; }
+        .image-wrapper { margin: 20px 0; }
+        .image-wrapper img { width: 100%; height: auto; }
+        footer { background: #f1f1f1; text-align: center; padding: 20px 0; }
+        @media (max-width: 600px) {
+            nav ul li { display: block; text-align: left; }
+            .menu-toggle { display: block; cursor: pointer; padding: 10px; }
+            nav ul { display: none; }
+            nav.active ul { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <span class="menu-toggle">Menü</span>
+            <ul>
+                <li><a href="bjwrapp_website.html">Startseite</a></li>
+                <li><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="überuns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Telefon: 0123 4567890</p>
+        <p>Email: kontakt@bjwrapp.de</p>
+        <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+    </div>    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BJWrapp. Alle Rechte vorbehalten. USt-ID: 123456789</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
