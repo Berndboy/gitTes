@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: gitTes/bjwrapp_website.html
+  DEPLOYMENT_File: bjwrapp_website.html
 
 jobs:
 # Please do not rename this job
